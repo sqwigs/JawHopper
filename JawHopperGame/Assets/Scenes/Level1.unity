@@ -407,7 +407,7 @@ GameObject:
   - component: {fileID: 856744918}
   - component: {fileID: 856744917}
   m_Layer: 0
-  m_Name: Proto
+  m_Name: Ground
   m_TagString: Map
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
