@@ -70,7 +70,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Physics.Raycast(transform.position, direction, out hit, 0.51f))
             {
-                if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
+                if (hit.collider != null && hit.collider.gameObject.tag == "Map")
                 {
                     return true;
                 }
@@ -80,7 +80,7 @@ public class PlayerController : MonoBehaviour
         {
             if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), direction, out hit, 0.51f))
             {
-                if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
+                if (hit.collider != null && hit.collider.gameObject.tag == "Map")
                 {
                     return true;
                 }
@@ -88,7 +88,7 @@ public class PlayerController : MonoBehaviour
             RaycastHit hit2;
             if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z), direction, out hit2, 0.51f))
             {
-                if (hit2.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
+                if (hit2.collider != null && hit2.collider.gameObject.tag == "Map")
                 {
                     return true;
                 }
