@@ -1,0 +1,361 @@
+fileFormatVersion: 2
+guid: 97dd6eab1d2b39a4dac1e166c235516b
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: pCube29
+    100004: pCube30
+    100006: pCylinder42
+    100008: polySurface20
+    100010: polySurface21
+    100012: polySurface22
+    100014: polySurface23
+    100016: polySurface24
+    100018: polySurface25
+    100020: polySurface26
+    100022: polySurface27
+    100024: polySurface28
+    100026: polySurface28 1
+    100028: polySurface29
+    100030: polySurface30
+    100032: polySurface31
+    100034: polySurface32
+    100036: polySurface33
+    100038: polySurface34
+    100040: polySurface35
+    100042: polySurface36
+    100044: polySurface37
+    100046: polySurface38
+    100048: polySurface39
+    100050: polySurface40
+    100052: polySurface41
+    100054: polySurface42
+    100056: polySurface43
+    100058: polySurface44
+    100060: polySurface45
+    100062: polySurface46
+    100064: polySurface47
+    100066: polySurface48
+    100068: polySurface49
+    100070: polySurface50
+    100072: polySurface51
+    100074: polySurface52
+    100076: polySurface53
+    100078: polySurface54
+    100080: polySurface55
+    100082: polySurface56
+    100084: polySurface57
+    100086: polySurface58
+    100088: polySurface59
+    100090: polySurface60
+    100092: polySurface61
+    100094: polySurface61 1
+    100096: polySurface62
+    100098: polySurface63
+    100100: polySurface63 1
+    100102: polySurface64
+    100104: transform100
+    100106: transform101
+    100108: transform102
+    100110: transform103
+    100112: transform52
+    100114: transform53
+    100116: transform54
+    100118: transform55
+    100120: transform56
+    100122: transform57
+    100124: transform58
+    100126: transform59
+    100128: transform60
+    100130: transform61
+    100132: transform62
+    100134: transform63
+    100136: transform64
+    100138: transform65
+    100140: transform66
+    100142: transform67
+    100144: transform68
+    100146: transform69
+    100148: transform70
+    100150: transform71
+    100152: transform72
+    100154: transform73
+    100156: transform74
+    100158: transform75
+    100160: transform78
+    100162: transform79
+    100164: transform80
+    100166: transform81
+    100168: transform82
+    100170: transform83
+    100172: transform84
+    100174: transform85
+    100176: transform86
+    100178: transform87
+    100180: transform88
+    100182: transform89
+    100184: transform90
+    100186: transform91
+    100188: transform92
+    100190: transform93
+    100192: transform94
+    100194: transform95
+    100196: transform96
+    100198: transform97
+    100200: transform98
+    100202: transform99
+    400000: //RootNode
+    400002: pCube29
+    400004: pCube30
+    400006: pCylinder42
+    400008: polySurface20
+    400010: polySurface21
+    400012: polySurface22
+    400014: polySurface23
+    400016: polySurface24
+    400018: polySurface25
+    400020: polySurface26
+    400022: polySurface27
+    400024: polySurface28
+    400026: polySurface28 1
+    400028: polySurface29
+    400030: polySurface30
+    400032: polySurface31
+    400034: polySurface32
+    400036: polySurface33
+    400038: polySurface34
+    400040: polySurface35
+    400042: polySurface36
+    400044: polySurface37
+    400046: polySurface38
+    400048: polySurface39
+    400050: polySurface40
+    400052: polySurface41
+    400054: polySurface42
+    400056: polySurface43
+    400058: polySurface44
+    400060: polySurface45
+    400062: polySurface46
+    400064: polySurface47
+    400066: polySurface48
+    400068: polySurface49
+    400070: polySurface50
+    400072: polySurface51
+    400074: polySurface52
+    400076: polySurface53
+    400078: polySurface54
+    400080: polySurface55
+    400082: polySurface56
+    400084: polySurface57
+    400086: polySurface58
+    400088: polySurface59
+    400090: polySurface60
+    400092: polySurface61
+    400094: polySurface61 1
+    400096: polySurface62
+    400098: polySurface63
+    400100: polySurface63 1
+    400102: polySurface64
+    400104: transform100
+    400106: transform101
+    400108: transform102
+    400110: transform103
+    400112: transform52
+    400114: transform53
+    400116: transform54
+    400118: transform55
+    400120: transform56
+    400122: transform57
+    400124: transform58
+    400126: transform59
+    400128: transform60
+    400130: transform61
+    400132: transform62
+    400134: transform63
+    400136: transform64
+    400138: transform65
+    400140: transform66
+    400142: transform67
+    400144: transform68
+    400146: transform69
+    400148: transform70
+    400150: transform71
+    400152: transform72
+    400154: transform73
+    400156: transform74
+    400158: transform75
+    400160: transform78
+    400162: transform79
+    400164: transform80
+    400166: transform81
+    400168: transform82
+    400170: transform83
+    400172: transform84
+    400174: transform85
+    400176: transform86
+    400178: transform87
+    400180: transform88
+    400182: transform89
+    400184: transform90
+    400186: transform91
+    400188: transform92
+    400190: transform93
+    400192: transform94
+    400194: transform95
+    400196: transform96
+    400198: transform97
+    400200: transform98
+    400202: transform99
+    2300000: polySurface64
+    3300000: polySurface64
+    4300000: polySurface64
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert1
+    second: {fileID: 2100000, guid: 3cc50939df5ca274ebb2aac0c721a601, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert11
+    second: {fileID: 2100000, guid: bb036d131b5f2fd458ff7d49d3633df6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert12
+    second: {fileID: 2100000, guid: 6783e9f0fbd362445aaa744fe4f61412, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert17
+    second: {fileID: 2100000, guid: f6654781971efa043a305aa49a206691, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert19
+    second: {fileID: 2100000, guid: 3c8155d348f3d5f408d6fbe9405026e0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert20
+    second: {fileID: 2100000, guid: b3b7f0fecf3b3564caf456470dd85230, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader1
+    second: {fileID: 2100000, guid: 4b977471c2c81d84aabbb40989e97d2c, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader2
+    second: {fileID: 2100000, guid: 9209685702f23ca428bcc140cc130961, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader3
+    second: {fileID: 2100000, guid: 327575d3a03ca7e40be71182d71ca01a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader4
+    second: {fileID: 2100000, guid: cd9bee46bb5b16d45892896ec315ef34, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader5
+    second: {fileID: 2100000, guid: 5ab081db709c7b1418c011b1f50d2b9a, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader6
+    second: {fileID: 2100000, guid: 43d7d171875349e4bae1bfb7854f9a46, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader7
+    second: {fileID: 2100000, guid: edbe8c6703b38f043a8fc690ed700c65, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: surfaceShader8
+    second: {fileID: 2100000, guid: ef16c879837099b4f9ec9cbf95c2ae55, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 0
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
