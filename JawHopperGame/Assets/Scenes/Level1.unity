@@ -227,6 +227,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   jumpSpeed: 10
   sideSpeed: 2.5
+  gravityScale: 10
 --- !u!1 &483041391
 GameObject:
   m_ObjectHideFlags: 0
