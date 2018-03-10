@@ -26,14 +26,14 @@ public class PlatformControllerVertical : MonoBehaviour
 
     }
 
-    void OnCollisionEnter(Collider other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Platform") {
             transform.parent = other.gameObject.transform;
         }
     }
 
-    void OnCollisionExit(Collider other)
+    void OnTriggerExit(Collider other)
     {
         transform.parent = null;
     }
