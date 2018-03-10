@@ -44,11 +44,7 @@ public class PlayerController : MonoBehaviour
     {
         grounded = false;
         RaycastHit hit;
-        Vector3 posBack = new Vector3(transform.position.x + (0.45f * -dir), transform.position.y, transform.position.z);
-        Vector3 posFront = new Vector3(transform.position.x + (0.45f * dir), transform.position.y, transform.position.z);
-
-        Vector3 pos = new Vector3(transform.position.x + (0.5f * -dir), transform.position.y, transform.position.z);
-        if (Physics.Raycast(pos, Vector3.down, out hit, 0.55f))
+        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.55f))
         {
             if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
             {
@@ -56,45 +52,16 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (grounded == false && Physics.Raycast(posFront, Vector3.down, out hit, 0.55f))
-        {
-            if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
-            {
-                grounded = true;
-            }
-        }
-
+        float y = body.velocity.y;
         if (jumpKeyDown && jumpKeyReleased && grounded)
         {
-            Jump();
-        }
-        else if (grounded)
-        {
-            Walk();
+            jumpKeyReleased = false;
+            dir = -dir;
+            y = jumpSpeed;
         }
 
+        body.velocity = new Vector3(sideSpeed * dir, y, 0f);
         Vector3 gravity = gravityScale * Vector3.down;
         body.AddForce(gravity, ForceMode.Acceleration);
-    }
-
-    void Jump()
-    {
-        jumpKeyReleased = false;
-        dir = -dir;
-        velocity = new Vector3(sideSpeed * dir, jumpSpeed, 0);
-        body.velocity = velocity;
-    }
-
-    void Walk()
-    {
-        velocity = new Vector3(sideSpeed * dir, 0, 0);
-        body.velocity = velocity;
-    }
-
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = Color.blue;
-        Vector3 pos = new Vector3(transform.position.x + (0.5f * -dir), transform.position.y, transform.position.z);
-        Gizmos.DrawLine(pos, pos + new Vector3(0, -0.55f, 0));
     }
 }

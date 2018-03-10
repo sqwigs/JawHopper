@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraView3 : MonoBehaviour {
+public class CameraViewFinal : MonoBehaviour {
 
     public GameObject player;
 
@@ -15,6 +15,9 @@ public class CameraView3 : MonoBehaviour {
 
     // Update is called once per frame
     void LateUpdate () {
-        transform.position = new Vector3(transform.position.x, player.transform.position.y, -27);
+        float newY = player.transform.position.y;
+        if (newY < 8)
+            newY = 8;
+        transform.position = new Vector3(transform.position.x, newY, -10);
 	}
 }

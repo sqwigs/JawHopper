@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuSelectors : MonoBehaviour {
 
-    public string levelSelect;
-    public string mainMenu;
+    
     public bool isPaused;
     public GameObject pauseMenuCanvas;
 
@@ -16,8 +15,12 @@ public class PauseMenuSelectors : MonoBehaviour {
         if (isPaused)
         {
             pauseMenuCanvas.SetActive(true);
+            Time.timeScale = 0f;
+
         }else{
             pauseMenuCanvas.SetActive(false);
+            Time.timeScale = 1f;
+
         }
 
         if (Input.GetKeyDown(KeyCode.P))
@@ -34,12 +37,12 @@ public class PauseMenuSelectors : MonoBehaviour {
 
     public void LevelSelect()
     {
-        SceneManager.LoadScene(levelSelect);
+        SceneManager.LoadScene("LevelSelect");
     }
 
-    public void quitToMain()
+    public void QuitToMain()
     {
-        SceneManager.LoadScene(mainMenu);
+        SceneManager.LoadScene("MainMenu");
     }
 
 }
