@@ -8,9 +8,11 @@ using UnityEngine.Events;
 
 public class LevelSelect : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
+    private UnityAction load;
+    public bool isPaused;
+
+    // Use this for initialization
+    void Start () {		
 	}
 	
 	// Update is called once per frame
@@ -23,13 +25,14 @@ public class LevelSelect : MonoBehaviour {
         level1.onClick.AddListener(loadLevel(level1.name));
     }
 
+    private UnityAction loadLevel(string name)
+    {
+        SceneManager.LoadScene(name);
+        return load;
+    }
+
     private void goBack()
     {
         //SceneManager.LoadScene();
-    }
-
-    private UnityAction loadLevel(string name)
-    {
-        throw new NotImplementedException();
     }
 }
