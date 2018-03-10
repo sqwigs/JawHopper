@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpeedItem : MonoBehaviour, BasicItem  {
+public class SpeedItem : BasicItem  {
     public float SpeedModifier
     {
         get
