@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 guid: eff427610dd964d418317cc9f26dcd9c
 timeCreated: 1520656156
@@ -6,6 +7,10 @@ timeCreated: 1520656156
 guid: 03f301f33bc060b42b4d8463dfd98735
 timeCreated: 1520656343
 >>>>>>> uhhhh
+=======
+guid: f155a0c1d65159d46bc94d444024b5e2
+timeCreated: 1520656106
+>>>>>>> Reconfigured Item pickup code
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -207,11 +212,15 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert20
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
     second: {fileID: 2100000, guid: bb8aaa0a9aa8f4346a6e4a6c67fd6058, type: 2}
 =======
     second: {fileID: 2100000, guid: 1dba17a9691740745baf759bacf7e038, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: a55667ee0086bb143b01a9682632db1e, type: 2}
+>>>>>>> Reconfigured Item pickup code
   materials:
     importMaterials: 1
     materialName: 0

@@ -20,9 +20,11 @@ public class BasicItem : MonoBehaviour
         }
     }
 
+    private bool pickedUp = false;
+
     public void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == "Player" && pickedUp == false)
         {
             var player = collider.gameObject.GetComponent<PlayerController>();
 

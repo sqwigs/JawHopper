@@ -1,4 +1,5 @@
 fileFormatVersion: 2
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
 guid: fec85e31625550e458b7f1b37a0f17d3
@@ -11,6 +12,10 @@ timeCreated: 1520656156
 guid: cfc88b0b58513de4482306270da604f7
 timeCreated: 1520656344
 >>>>>>> uhhhh
+=======
+guid: 735ced15c5608b3419dc95e7bedfef0c
+timeCreated: 1520656106
+>>>>>>> Reconfigured Item pickup code
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -36,6 +41,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 60fba63b6c38aa048b01c89b45a53a05, type: 2}
@@ -45,10 +51,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 383c0c0a9dd03a848ae2067bbb3a157b, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 3cc50939df5ca274ebb2aac0c721a601, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert11
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 4b1e12914c7346843b6b160460f175cc, type: 2}
@@ -58,10 +68,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 45ad4ed6bb2f8ff4482a678264f9e18d, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: bb036d131b5f2fd458ff7d49d3633df6, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert12
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: c3c69299f9b47b54b9a6a9d6c4df0632, type: 2}
@@ -71,10 +85,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 5ee5f969ec2be7c4a954a04a93acac64, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 6783e9f0fbd362445aaa744fe4f61412, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert17
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 8df6d6ad57bda3340a7b66be5beef956, type: 2}
@@ -84,10 +102,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 4d44d0ce89a321141ad8164328fb1dfd, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: f6654781971efa043a305aa49a206691, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert19
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 55397d4fe330eff45908dfed2d9af396, type: 2}
@@ -97,10 +119,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: eb9e219f8b2923e44840f846b66981f2, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 3c8155d348f3d5f408d6fbe9405026e0, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader1
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 08e265b011a99f949b893405eb1074d5, type: 2}
@@ -110,10 +136,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: d0082bab845d101469aa13608c67974b, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 4b977471c2c81d84aabbb40989e97d2c, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader2
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 008c7578addcfa04a92fe5eb4aa8c17f, type: 2}
@@ -123,10 +153,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: a5046732ba39e334ba2bec022a95f902, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 9209685702f23ca428bcc140cc130961, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader3
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: e63e08ab878941d4db6bff19a996d3e2, type: 2}
@@ -136,10 +170,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 2e0b872050d5eeb478a139692003a533, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 327575d3a03ca7e40be71182d71ca01a, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader4
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 00364b4bb3b950d44ae8340709cf0349, type: 2}
@@ -149,10 +187,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 1440f6426e6246e4090c01e47c9c7608, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: cd9bee46bb5b16d45892896ec315ef34, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader5
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 3fdd1d21d5a69314389bd39b30fcc18c, type: 2}
@@ -162,10 +204,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 62990425cccfb3c49b901c8d4a17af76, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 5ab081db709c7b1418c011b1f50d2b9a, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader6
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 196cea771f98fcd4caccc1aa280c2ca8, type: 2}
@@ -175,10 +221,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 1412ed4e6f553c94d810aa4ab08db6b6, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: 43d7d171875349e4bae1bfb7854f9a46, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader7
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 8702fda65466d504aa60e81be7a2c818, type: 2}
@@ -188,10 +238,14 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 2e9beeda21deb194c9a700d78400b0b0, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: edbe8c6703b38f043a8fc690ed700c65, type: 2}
+>>>>>>> Reconfigured Item pickup code
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader8
+<<<<<<< 004aeba26097ce857ff26b5682741c0edc628e44
 <<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 <<<<<<< HEAD
     second: {fileID: 2100000, guid: 56025a455a5c5a241aefc5d32333f740, type: 2}
@@ -201,6 +255,9 @@ ModelImporter:
 =======
     second: {fileID: 2100000, guid: 975331ad1b149ca40a97c251d377a31b, type: 2}
 >>>>>>> uhhhh
+=======
+    second: {fileID: 2100000, guid: ef16c879837099b4f9ec9cbf95c2ae55, type: 2}
+>>>>>>> Reconfigured Item pickup code
   materials:
     importMaterials: 1
     materialName: 0
