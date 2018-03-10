@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformControllerHorizontal : MonoBehaviour
+public class PlatformControllerVertical : MonoBehaviour
 {
 
     Rigidbody body;
@@ -26,11 +26,6 @@ public class PlatformControllerHorizontal : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        
-    }
-
     void FixedUpdate()
     {
         grounded = false;
@@ -43,20 +38,20 @@ public class PlatformControllerHorizontal : MonoBehaviour
             }
         }
 
-        float y = body.velocity.y;
+        float x = body.velocity.x;
 
-        float bodyx = body.transform.position.x;
+        float bodyy = body.transform.position.y;
 
-        if (bodyx > 12)
+        if (bodyy > 15)
         {
             dir = -1;
         }
-        else if (bodyx < -12.6) {
+        else if (bodyy < 1) {
             dir = 1;
         }
    
 
-        body.velocity = new Vector3(sideSpeed * dir, y, 0f);
+        body.velocity = new Vector3(0f, sideSpeed * dir, 0f);
         //Vector3 gravity = gravityScale * Vector3.down;
         //body.AddForce(gravity, ForceMode.Acceleration);
     }
