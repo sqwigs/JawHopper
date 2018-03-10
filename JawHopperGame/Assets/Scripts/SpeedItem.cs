@@ -3,15 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpeedItem : BasicItem  {
-    public float SpeedModifier
+    public override float SpeedModifier
     {
         get
         {
-            return 1.0f;
+            return -5.0f;
         }
     }
 
-    public float JumpModifier {
+    public override float JumpModifier {
         get
         {
             return 0.0f;
