@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 10;
     public float sideSpeed = 5;
     public float gravityScale = 10f;
+    public BasicItem currentItem;
 
     private float dir = 1;
     private bool grounded;

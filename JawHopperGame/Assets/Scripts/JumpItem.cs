@@ -18,6 +18,13 @@ public class JumpItem : MonoBehaviour, BasicItem  {
         }
     }
 
+    public void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.tag == "Player")
+            //set current Item
+            Destroy(this);
+    }
+
     // Use this for initialization
     void Start () {
 		
