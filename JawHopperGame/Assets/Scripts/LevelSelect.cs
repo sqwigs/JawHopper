@@ -10,7 +10,6 @@ public class LevelSelect : MonoBehaviour {
 
     private UnityAction load;
     public bool isPaused;
-    public GameObject LoadCanvas;
 
     // Use this for initialization
     void Start () {		
@@ -18,19 +17,6 @@ public class LevelSelect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (isPaused)
-        {
-            LoadCanvas.SetActive(true);
-        }
-        else
-        {
-            LoadCanvas.SetActive(false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.P))
-        {
-            isPaused = !isPaused;
-        }
 
         Button backButton = GameObject.Find("backButton").GetComponent<Button>();
         Button level1 = GameObject.Find("level1").GetComponent<Button>();
