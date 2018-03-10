@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: 97dd6eab1d2b39a4dac1e166c235516b
-timeCreated: 1520656670
-=======
-guid: 11944dffa9b13d647b33dd5c9563d67a
-timeCreated: 1520656840
->>>>>>> 6dd409e29cfab04e4f9fcf3b622a31ac7ea066c3
-licenseType: Free
 ModelImporter:
   serializedVersion: 22
   fileIDToRecycleName:
@@ -223,72 +216,72 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert1
-    second: {fileID: 2100000, guid: 2477864366ff79047b803fc3e03dd644, type: 2}
+    second: {fileID: 2100000, guid: 3cc50939df5ca274ebb2aac0c721a601, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert11
-    second: {fileID: 2100000, guid: 5afe215a56df95943b6190e46826a7a7, type: 2}
+    second: {fileID: 2100000, guid: bb036d131b5f2fd458ff7d49d3633df6, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert12
-    second: {fileID: 2100000, guid: 3410623002e83d441993cb0b211e14a1, type: 2}
+    second: {fileID: 2100000, guid: 6783e9f0fbd362445aaa744fe4f61412, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert17
-    second: {fileID: 2100000, guid: 2c102cd80699ce9438a3a71a03d7346f, type: 2}
+    second: {fileID: 2100000, guid: f6654781971efa043a305aa49a206691, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert19
-    second: {fileID: 2100000, guid: 22e9e9c83623e564185a997b3f35eec7, type: 2}
+    second: {fileID: 2100000, guid: 3c8155d348f3d5f408d6fbe9405026e0, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert20
-    second: {fileID: 2100000, guid: 21c1f5910267d1947b483f8a0ed9bd50, type: 2}
+    second: {fileID: 2100000, guid: b3b7f0fecf3b3564caf456470dd85230, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader1
-    second: {fileID: 2100000, guid: 40886d6da067e0842bb840dfc6cb7a91, type: 2}
+    second: {fileID: 2100000, guid: 4b977471c2c81d84aabbb40989e97d2c, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader2
-    second: {fileID: 2100000, guid: 2c07b6dcc2246494ebe27bc79d017b1b, type: 2}
+    second: {fileID: 2100000, guid: 9209685702f23ca428bcc140cc130961, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader3
-    second: {fileID: 2100000, guid: fe1d14b256301b54fab5ace7572c02f6, type: 2}
+    second: {fileID: 2100000, guid: 327575d3a03ca7e40be71182d71ca01a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader4
-    second: {fileID: 2100000, guid: 7e0c99116333a384fb21b5418b32c094, type: 2}
+    second: {fileID: 2100000, guid: cd9bee46bb5b16d45892896ec315ef34, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader5
-    second: {fileID: 2100000, guid: 40c8b483df350c54697964d51c2548ec, type: 2}
+    second: {fileID: 2100000, guid: 5ab081db709c7b1418c011b1f50d2b9a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader6
-    second: {fileID: 2100000, guid: 2e64dd59d627e77489fda2996fd00f1a, type: 2}
+    second: {fileID: 2100000, guid: 43d7d171875349e4bae1bfb7854f9a46, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader7
-    second: {fileID: 2100000, guid: 7065b9bbcf27abe4983161882d5b6ab6, type: 2}
+    second: {fileID: 2100000, guid: edbe8c6703b38f043a8fc690ed700c65, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: surfaceShader8
-    second: {fileID: 2100000, guid: 40d9897a4012fc343917c79a8b23fa46, type: 2}
+    second: {fileID: 2100000, guid: ef16c879837099b4f9ec9cbf95c2ae55, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
