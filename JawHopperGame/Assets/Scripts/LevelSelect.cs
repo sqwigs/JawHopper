@@ -9,10 +9,10 @@ using UnityEngine.Events;
 public class LevelSelect : MonoBehaviour {
 
     private UnityAction load;
+    public bool isPaused;
 
     // Use this for initialization
-    void Start () {
-		
+    void Start () {		
 	}
 	
 	// Update is called once per frame
@@ -35,5 +35,4 @@ public class LevelSelect : MonoBehaviour {
     {
         //SceneManager.LoadScene();
     }
-
 }

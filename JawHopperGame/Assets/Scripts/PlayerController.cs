@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 10;
     public float sideSpeed = 5;
     public float gravityScale = 10f;
+    public BasicItem currentItem;
 
     private float dir = 1;
     private bool grounded;
@@ -42,16 +43,14 @@ public class PlayerController : MonoBehaviour
     void FixedUpdate()
     {
         grounded = false;
-        RaycastHit hit;
-        if (Physics.Raycast(transform.position, Vector3.down, out hit, 0.55f))
-        {
-            if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
-            {
-                grounded = true;
-            }
-        }
+        if (CheckCollision(Vector3.down))
+            grounded = true;
 
-        float y = body.velocity.y;
+        float x = sideSpeed * dir;
+        if (CheckCollision(Vector3.right) || CheckCollision(Vector3.left))
+            x = 0f;
+
+        float y = body.velocity.y + (this.currentItem != null ? this.currentItem.JumpModifier : 0.0f); 
         if (jumpKeyDown && jumpKeyReleased && grounded)
         {
             jumpKeyReleased = false;
@@ -59,8 +58,42 @@ public class PlayerController : MonoBehaviour
             y = jumpSpeed;
         }
 
-        body.velocity = new Vector3(sideSpeed * dir, y, 0f);
+        body.velocity = new Vector3(x, y, 0f);
         Vector3 gravity = gravityScale * Vector3.down;
         body.AddForce(gravity, ForceMode.Acceleration);
+    }
+
+    private bool CheckCollision(Vector3 direction)
+    {
+        RaycastHit hit;
+        if (direction == Vector3.up || direction == Vector3.down)
+        {
+            if (Physics.Raycast(transform.position, direction, out hit, 0.51f))
+            {
+                if (hit.collider != null && hit.collider.gameObject.tag == "Map")
+                {
+                    return true;
+                }
+            }
+        }
+        else if (direction == Vector3.right || direction == Vector3.left)
+        {
+            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), direction, out hit, 0.51f))
+            {
+                if (hit.collider != null && hit.collider.gameObject.tag == "Map")
+                {
+                    return true;
+                }
+            }
+            RaycastHit hit2;
+            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z), direction, out hit2, 0.51f))
+            {
+                if (hit2.collider != null && hit2.collider.gameObject.tag == "Map")
+                {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }
