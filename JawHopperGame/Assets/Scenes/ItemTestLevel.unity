@@ -228,6 +228,7 @@ MonoBehaviour:
   jumpSpeed: 10
   sideSpeed: 2.5
   gravityScale: 10
+  currentItem: {fileID: 0}
 --- !u!1 &856744915
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,7 +435,7 @@ GameObject:
   - component: {fileID: 1245407816}
   - component: {fileID: 1245407815}
   m_Layer: 0
-  m_Name: Sphere
+  m_Name: TestItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
