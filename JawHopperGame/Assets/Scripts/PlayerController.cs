@@ -25,11 +25,20 @@ public class PlayerController : MonoBehaviour
         bool grounded = false;
         RaycastHit hit;
 
-        Vector3 pos = new Vector3(transform.position.x + (0.5f * -dir), transform.position.y, transform.position.z);
+        Vector3 posBack = new Vector3(transform.position.x + (0.45f * -dir), transform.position.y, transform.position.z);
+        Vector3 posFront = new Vector3(transform.position.x + (0.45f * dir), transform.position.y, transform.position.z);
 
-        if (Physics.Raycast(pos, Vector3.down, out hit, 0.55f))
+        if (Physics.Raycast(posBack, Vector3.down, out hit, 0.55f))
         {
-            if (hit.collider.gameObject.tag == "Map")
+            if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
+            {
+                grounded = true;
+            }
+        }
+
+        if (grounded == false && Physics.Raycast(posFront, Vector3.down, out hit, 0.55f))
+        {
+            if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
             {
                 grounded = true;
             }
@@ -57,5 +66,12 @@ public class PlayerController : MonoBehaviour
     {
         velocity = new Vector3(sideSpeed * dir, 0, 0);
         body.velocity = velocity;
+    }
+
+    private void OnDrawGizmos()
+    {
+        Gizmos.color = Color.blue;
+        Vector3 pos = new Vector3(transform.position.x + (0.5f * -dir), transform.position.y, transform.position.z);
+        Gizmos.DrawLine(pos, pos + new Vector3(0, -0.55f, 0));
     }
 }
