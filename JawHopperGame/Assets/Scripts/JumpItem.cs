@@ -2,19 +2,19 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpeedItem : MonoBehaviour, BasicItem  {
+public class JumpItem : MonoBehaviour, BasicItem  {
     public float SpeedModifier
     {
         get
         {
-            return 1.0f;
+            return 0.0f;
         }
     }
 
     public float JumpModifier {
         get
         {
-            return 0.0f;
+            return 1.0f;
         }
     }
 
