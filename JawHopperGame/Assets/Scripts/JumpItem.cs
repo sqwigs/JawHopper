@@ -4,7 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class JumpItem : BasicItem  {
-    public float SpeedModifier
+    public override float SpeedModifier
     {
         get
         {
@@ -12,12 +12,13 @@ public class JumpItem : BasicItem  {
         }
     }
 
-    public float JumpModifier {
+    public override float JumpModifier {
         get
         {
-            return 10.0f;
+            return 5.0f;
         }
     }
+
 
     // Use this for initialization
     void Start () {
