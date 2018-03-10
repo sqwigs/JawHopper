@@ -11,8 +11,7 @@ public class PlayerController : MonoBehaviour
     public float jumpSpeed = 10;
     public float sideSpeed = 5;
     public float gravityScale = 10f;
-    public float jumpModifier = 0.0f;
-    public float speedModifier = 0.0f;
+    public BasicItem currentItem;
 
     private float dir = 1;
     private bool grounded;
@@ -51,7 +50,7 @@ public class PlayerController : MonoBehaviour
         if (CheckCollision(Vector3.right) || CheckCollision(Vector3.left))
             x = 0f;
 
-        float y = body.velocity.y + jumpModifier; 
+        float y = body.velocity.y + (this.currentItem != null ? this.currentItem.JumpModifier : 0.0f); 
         if (jumpKeyDown && jumpKeyReleased && grounded)
         {
             jumpKeyReleased = false;
@@ -79,7 +78,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (direction == Vector3.right || direction == Vector3.left)
         {
-            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.5f, transform.position.z), direction, out hit, 0.51f))
+            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y + 0.49f, transform.position.z), direction, out hit, 0.51f))
             {
                 if (hit.collider != null && hit.collider.gameObject.tag == "Map")
                 {
@@ -87,9 +86,17 @@ public class PlayerController : MonoBehaviour
                 }
             }
             RaycastHit hit2;
-            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y - 0.5f, transform.position.z), direction, out hit2, 0.51f))
+            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y - 0.49f, transform.position.z), direction, out hit2, 0.51f))
             {
                 if (hit2.collider != null && hit2.collider.gameObject.tag == "Map")
+                {
+                    return true;
+                }
+            }
+            RaycastHit hit3;
+            if (Physics.Raycast(new Vector3(transform.position.x, transform.position.y, transform.position.z), direction, out hit3, 0.51f))
+            {
+                if (hit3.collider != null && hit3.collider.gameObject.tag == "Map")
                 {
                     return true;
                 }
