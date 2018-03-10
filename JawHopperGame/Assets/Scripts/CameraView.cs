@@ -10,12 +10,13 @@ public class CameraView : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        offset = transform.position - player.transform.position;
+        offset = new Vector3(0, transform.position.y - player.transform.position.y, 0);
+        
 	}
 	
 	// Update is called once per frame
 	void LateUpdate () {
-        transform.position = player.transform.position + offset;
+       offset = new Vector3 (0, player.transform.position.y + offset.y, 0);
 		
 	}
 }
