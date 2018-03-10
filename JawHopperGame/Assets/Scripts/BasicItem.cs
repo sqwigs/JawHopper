@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
 public abstract class BasicItem : MonoBehaviour
 {
     public abstract float SpeedModifier
