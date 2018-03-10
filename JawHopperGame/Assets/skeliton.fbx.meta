@@ -1,6 +1,11 @@
 fileFormatVersion: 2
+<<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
 guid: eff427610dd964d418317cc9f26dcd9c
 timeCreated: 1520656156
+=======
+guid: 03f301f33bc060b42b4d8463dfd98735
+timeCreated: 1520656343
+>>>>>>> uhhhh
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -202,7 +207,11 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: lambert20
+<<<<<<< 1cd98be8f419e44d95ebfa03ce9459ece46eb612
     second: {fileID: 2100000, guid: bb8aaa0a9aa8f4346a6e4a6c67fd6058, type: 2}
+=======
+    second: {fileID: 2100000, guid: 1dba17a9691740745baf759bacf7e038, type: 2}
+>>>>>>> uhhhh
   materials:
     importMaterials: 1
     materialName: 0
