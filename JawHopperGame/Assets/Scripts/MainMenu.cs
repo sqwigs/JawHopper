@@ -51,6 +51,6 @@ public class MainMenu : MonoBehaviour
 
         //startButton.colors = theColor;
 
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("LevelRedux");
     }
 }
