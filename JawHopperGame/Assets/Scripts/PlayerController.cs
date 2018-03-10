@@ -6,13 +6,13 @@ public class PlayerController : MonoBehaviour
 {
 
     Rigidbody body;
-    Vector3 velocity;    
+    Vector3 velocity;
 
     public float jumpSpeed = 10;
-    public float sideSpeed = 5;
+    public float sideSpeed = 2.5f;
     public float gravityScale = 10f;
-    public float speedModifier = 0.0f;
-    public float jumpModifier = 0.0f;
+    public float speedModifier = 1.0f;
+    public float jumpModifier = 1.0f;
 
     private float dir = 1;
     private bool grounded;
@@ -25,6 +25,8 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody>();
         body.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
         jumpKeyDown = false;
+        speedModifier = 1.0f;
+        jumpModifier = 1.0f;
     }
 
     private void Update()
@@ -47,19 +49,19 @@ public class PlayerController : MonoBehaviour
         if (CheckCollision(Vector3.down))
             grounded = true;
 
-        float x = sideSpeed * dir;
+        float x = (sideSpeed) * dir;
         if (CheckCollision(Vector3.right) || CheckCollision(Vector3.left))
             x = 0f;
 
-        float y = body.velocity.y; 
+        float y = body.velocity.y;
         if (jumpKeyDown && jumpKeyReleased && grounded)
         {
             jumpKeyReleased = false;
             dir = -dir;
-            y = jumpSpeed + jumpModifier;
+            y = jumpSpeed * jumpModifier;
         }
 
-        body.velocity = new Vector3(x, y, 0f);
+        body.velocity = new Vector3(x * speedModifier, y, 0f);
         Vector3 gravity = gravityScale * Vector3.down;
         body.AddForce(gravity, ForceMode.Acceleration);
     }
