@@ -8,14 +8,14 @@ public class JumpItem : BasicItem  {
     {
         get
         {
-            return 0.0f;
+            return 1.0f;
         }
     }
 
     public override float JumpModifier {
         get
         {
-            return 5.0f;
+            return 2.0f;
         }
     }
 
