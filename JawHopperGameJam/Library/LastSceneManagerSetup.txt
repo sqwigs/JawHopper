@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/PlayerControllerTestEric.unity
+- path: Assets/PlayerControllerTestCody.unity
   isLoaded: 1
   isActive: 1
