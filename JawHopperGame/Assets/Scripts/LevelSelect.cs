@@ -17,11 +17,7 @@ public class LevelSelect : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-
-        Button backButton = GameObject.Find("backButton").GetComponent<Button>();
         Button level1 = GameObject.Find("level1").GetComponent<Button>();
-
-        backButton.onClick.AddListener(goBack);
         level1.onClick.AddListener(loadLevel(level1.name));
     }
 
@@ -29,10 +25,5 @@ public class LevelSelect : MonoBehaviour {
     {
         SceneManager.LoadScene(name);
         return load;
-    }
-
-    private void goBack()
-    {
-        //SceneManager.LoadScene();
     }
 }

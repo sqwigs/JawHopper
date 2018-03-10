@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
 
         startButton.onClick.AddListener(StartGame);
         endButton.onClick.AddListener(EndGame);
+        loadButton.onClick.RemoveAllListeners();
         loadButton.onClick.AddListener(LoadLevel);
 
     }
@@ -50,6 +51,6 @@ public class MainMenu : MonoBehaviour
 
         //startButton.colors = theColor;
 
-        SceneManager.LoadScene("Level1");
+        SceneManager.LoadScene("LevelRedux");
     }
 }
