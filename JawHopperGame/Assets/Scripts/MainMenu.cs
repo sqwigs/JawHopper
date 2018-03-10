@@ -7,12 +7,7 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
+    public string levelSelect;
 
     // Update is called once per frame
     void Update()
@@ -21,18 +16,18 @@ public class MainMenu : MonoBehaviour
         Button endButton = GameObject.Find("endButton").GetComponent<Button>();
         Button loadButton = GameObject.Find("loadButton").GetComponent<Button>();
 
-        startButton.onClick.AddListener(startGame);
-        endButton.onClick.AddListener(endGame);
-        loadButton.onClick.AddListener(loadLevel);
+        startButton.onClick.AddListener(StartGame);
+        endButton.onClick.AddListener(EndGame);
+        loadButton.onClick.AddListener(LoadLevel);
 
     }
 
-    private void loadLevel()
+    private void LoadLevel()
     {
-        //SceneManager.LoadScene("LevelSelect);
+        SceneManager.LoadScene(levelSelect);
     }
 
-    private void endGame()
+    private void EndGame()
     {
         //Button endButton = GameObject.Find("endButton").GetComponent<Button>();
         //ColorBlock theColor = endButton.colors;
@@ -45,7 +40,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    private void startGame()
+    private void StartGame()
     {
         //Button startButton = GameObject.Find("startButton").GetComponent<Button>();
         //ColorBlock theColor = startButton.colors;

@@ -20,7 +20,8 @@ public class PlatformCollider : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        floor.enabled = false;
+        if (other.transform.position.y < transform.position.y)
+            floor.enabled = false;
     }
 
     private void OnTriggerExit(Collider other)
