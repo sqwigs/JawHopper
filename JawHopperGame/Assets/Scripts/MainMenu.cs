@@ -18,6 +18,7 @@ public class MainMenu : MonoBehaviour
 
         startButton.onClick.AddListener(StartGame);
         endButton.onClick.AddListener(EndGame);
+        loadButton.onClick.RemoveAllListeners();
         loadButton.onClick.AddListener(LoadLevel);
 
     }
