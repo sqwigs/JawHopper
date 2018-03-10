@@ -18,6 +18,8 @@ public class PlayerController : MonoBehaviour
     private bool grounded;
     private bool jumpKeyDown;
     private bool jumpKeyReleased;
+    private int jumpFrames;
+    private bool jumping;
 
 
     void Start()
@@ -25,19 +27,35 @@ public class PlayerController : MonoBehaviour
         body = GetComponent<Rigidbody>();
         body.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
         jumpKeyDown = false;
+        jumpFrames = 0;
     }
 
     private void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        jumpKeyDown = Input.GetKey(KeyCode.Space);
+        if (jumpKeyDown)
         {
-            jumpKeyDown = true;
+            if (jumpFrames == 0 && grounded)
+            {
+                jumpKeyReleased = false;
+                jumpFrames = 1;
+                dir = -dir;
+            }
+
+            if (jumpFrames < 11 && jumpFrames > 0)
+            {
+                jumping = true;
+            }
+            else
+            {
+                jumping = false;
+            }
         }
         else
         {
-            jumpKeyDown = false;
-            if (grounded)
-                jumpKeyReleased = true;
+            jumpFrames = 0;
+            jumpKeyReleased = true;
+            jumping = false;
         }
     }
 
@@ -52,11 +70,10 @@ public class PlayerController : MonoBehaviour
             x = 0f;
 
         float y = body.velocity.y; 
-        if (jumpKeyDown && jumpKeyReleased && grounded)
+        if (jumping)
         {
-            jumpKeyReleased = false;
-            dir = -dir;
-            y = jumpSpeed + jumpModifier;
+            jumpFrames++;
+            y += (jumpSpeed + jumpModifier);
         }
 
         body.velocity = new Vector3(x, y, 0f);
