@@ -15,7 +15,7 @@ public class JumpItem : BasicItem  {
     public float JumpModifier {
         get
         {
-            return 1.0f;
+            return 10.0f;
         }
     }
 

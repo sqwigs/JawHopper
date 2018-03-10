@@ -50,7 +50,7 @@ public class PlayerController : MonoBehaviour
         if (CheckCollision(Vector3.right) || CheckCollision(Vector3.left))
             x = 0f;
 
-        float y = body.velocity.y;
+        float y = body.velocity.y + (this.currentItem != null ? this.currentItem.JumpModifier : 0.0f); 
         if (jumpKeyDown && jumpKeyReleased && grounded)
         {
             jumpKeyReleased = false;
