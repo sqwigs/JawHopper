@@ -2,29 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BasicItem : MonoBehaviour
+public abstract class BasicItem : MonoBehaviour
 {
-    public float SpeedModifier
+    public abstract float SpeedModifier
     {
-        get
-        {
-            return 0.0f;
-        }
+        get;
     }
 
-    public float JumpModifier
+    public abstract float JumpModifier
     {
-        get
-        {
-            return 0.0f;
-        }
+        get;
     }
-
-    private bool pickedUp = false;
 
     public void OnTriggerEnter(Collider collider)
     {
-        if (collider.gameObject.tag == "Player" && pickedUp == false)
+        if (collider.gameObject.tag == "Player")
         {
             var player = collider.gameObject.GetComponent<PlayerController>();
 
