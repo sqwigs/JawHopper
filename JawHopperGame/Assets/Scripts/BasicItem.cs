@@ -3,8 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class BasicItem : MonoBehaviour {
-    public float SpeedModifier { get; }
-    public float JumpModifier { get; }
+    public float SpeedModifier { get; set; }
+    public float JumpModifier { get; set; }
 
     public void OnTriggerEnter(Collider collider)
     {
