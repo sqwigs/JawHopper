@@ -19,10 +19,17 @@ public class MainMenu : MonoBehaviour
     {
         Button startButton = GameObject.Find("startButton").GetComponent<Button>();
         Button endButton = GameObject.Find("endButton").GetComponent<Button>();
+        Button loadButton = GameObject.Find("loadButton").GetComponent<Button>();
 
         startButton.onClick.AddListener(startGame);
         endButton.onClick.AddListener(endGame);
+        loadButton.onClick.AddListener(loadLevel);
 
+    }
+
+    private void loadLevel()
+    {
+        //SceneManager.LoadScene("LevelSelect);
     }
 
     private void endGame()
