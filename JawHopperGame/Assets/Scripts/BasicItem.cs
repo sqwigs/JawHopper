@@ -28,8 +28,8 @@ public class BasicItem : MonoBehaviour
         {
             var player = collider.gameObject.GetComponent<PlayerController>();
 
-            player.jumpModifier = this.JumpModifier;
-            player.speedModifier = this.SpeedModifier;
+            player.jumpSpeed = this.JumpModifier;
+            player.sideSpeed = this.SpeedModifier;
 
             Destroy(this.gameObject);
         }
