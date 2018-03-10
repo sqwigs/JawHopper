@@ -51,12 +51,12 @@ public class PlayerController : MonoBehaviour
         if (CheckCollision(Vector3.right) || CheckCollision(Vector3.left))
             x = 0f;
 
-        float y = body.velocity.y + jumpModifier; 
+        float y = body.velocity.y; 
         if (jumpKeyDown && jumpKeyReleased && grounded)
         {
             jumpKeyReleased = false;
             dir = -dir;
-            y = jumpSpeed;
+            y = jumpSpeed + jumpModifier;
         }
 
         body.velocity = new Vector3(x, y, 0f);
