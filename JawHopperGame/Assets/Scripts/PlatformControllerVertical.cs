@@ -26,6 +26,18 @@ public class PlatformControllerVertical : MonoBehaviour
 
     }
 
+    void OnCollisionEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Platform") {
+            transform.parent = other.gameObject.transform;
+        }
+    }
+
+    void OnCollisionExit(Collider other)
+    {
+        transform.parent = null;
+    }
+
     void FixedUpdate()
     {
         grounded = false;

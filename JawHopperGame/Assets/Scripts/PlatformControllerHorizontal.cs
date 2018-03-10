@@ -26,9 +26,17 @@ public class PlatformControllerHorizontal : MonoBehaviour
 
     }
 
-    private void Update()
+    void OnTriggerEnter(Collider other)
     {
-        
+        if (other.gameObject.tag == "Platform")
+        {
+            transform.parent = other.gameObject.transform;
+        }
+    }
+
+    void OnTriggerExit(Collider other)
+    {
+        transform.parent = null;
     }
 
     void FixedUpdate()
