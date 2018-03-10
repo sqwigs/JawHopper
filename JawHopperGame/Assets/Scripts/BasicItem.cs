@@ -1,22 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
-public class BasicItem : MonoBehaviour {
-    public float SpeedModifier
+public abstract class BasicItem : MonoBehaviour
+{
+    public abstract float SpeedModifier
     {
-        get
-        {
-            return 0.0f;
-        }
+        get;
     }
 
-    public float JumpModifier
+    public abstract float JumpModifier
     {
-        get
-        {
-            return 0.0f;
-        }
+        get;
     }
 
     public void OnTriggerEnter(Collider collider)
@@ -24,7 +18,9 @@ public class BasicItem : MonoBehaviour {
         if (collider.gameObject.tag == "Player")
         {
             var player = collider.gameObject.GetComponent<PlayerController>();
-            player.currentItem = Instantiate(this);
+
+            player.jumpModifier = this.JumpModifier;
+            player.speedModifier = this.SpeedModifier;
 
             Destroy(this.gameObject);
         }
