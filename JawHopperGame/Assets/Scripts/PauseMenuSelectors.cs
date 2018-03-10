@@ -41,11 +41,6 @@ public class PauseMenuSelectors : MonoBehaviour {
         isPaused = false;
     }
 
-    public void LevelSelect()
-    {
-        SceneManager.LoadScene(levelSelect);
-    }
-
     public void QuitToMain()
     {
         SceneManager.LoadScene(mainMenu);
