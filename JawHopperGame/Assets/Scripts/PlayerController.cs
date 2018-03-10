@@ -10,25 +10,44 @@ public class PlayerController : MonoBehaviour
 
     public float jumpSpeed = 10;
     public float sideSpeed = 5;
+    public float gravityScale = 10f;
 
-    float dir = 1;
+    private float dir = 1;
+    private bool grounded;
+    private bool jumpKeyDown;
+    private bool jumpKeyReleased;
 
 
     void Start()
     {
         body = GetComponent<Rigidbody>();
         body.constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
+        jumpKeyDown = false;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKey(KeyCode.Space))
+        {
+            jumpKeyDown = true;
+        }
+        else
+        {
+            jumpKeyDown = false;
+            if (grounded)
+                jumpKeyReleased = true;
+        }
     }
 
     void FixedUpdate()
     {
-        bool grounded = false;
+        grounded = false;
         RaycastHit hit;
-
         Vector3 posBack = new Vector3(transform.position.x + (0.45f * -dir), transform.position.y, transform.position.z);
         Vector3 posFront = new Vector3(transform.position.x + (0.45f * dir), transform.position.y, transform.position.z);
 
-        if (Physics.Raycast(posBack, Vector3.down, out hit, 0.55f))
+        Vector3 pos = new Vector3(transform.position.x + (0.5f * -dir), transform.position.y, transform.position.z);
+        if (Physics.Raycast(pos, Vector3.down, out hit, 0.55f))
         {
             if (hit.collider.gameObject != null && hit.collider.gameObject.tag == "Map")
             {
@@ -44,7 +63,7 @@ public class PlayerController : MonoBehaviour
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+        if (jumpKeyDown && jumpKeyReleased && grounded)
         {
             Jump();
         }
@@ -53,10 +72,13 @@ public class PlayerController : MonoBehaviour
             Walk();
         }
 
+        Vector3 gravity = gravityScale * Vector3.down;
+        body.AddForce(gravity, ForceMode.Acceleration);
     }
 
     void Jump()
     {
+        jumpKeyReleased = false;
         dir = -dir;
         velocity = new Vector3(sideSpeed * dir, jumpSpeed, 0);
         body.velocity = velocity;
