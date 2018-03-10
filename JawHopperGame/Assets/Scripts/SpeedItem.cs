@@ -7,14 +7,14 @@ public class SpeedItem : BasicItem  {
     {
         get
         {
-            return -5.0f;
+            return 0.5f;
         }
     }
 
     public override float JumpModifier {
         get
         {
-            return 0.0f;
+            return 1.0f;
         }
     }
 
