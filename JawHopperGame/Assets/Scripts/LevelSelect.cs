@@ -10,7 +10,6 @@ public class LevelSelect : MonoBehaviour {
 
     private UnityAction load;
     public bool isPaused;
-    public GameObject LoadCanvas;
 
     // Use this for initialization
     void Start () {		
