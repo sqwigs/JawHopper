@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuSelectors : MonoBehaviour {
 
-    
+    public string levelSelect;
+    public string mainMenu;
     public bool isPaused;
     public GameObject pauseMenuCanvas;
 
 	// Update is called once per frame
+
+    void Start()
+    {
+        pauseMenuCanvas = GameObject.Find("PauseMenuCanvas");
+    }
 	void Update () {
 		
         if (isPaused)
@@ -23,7 +29,7 @@ public class PauseMenuSelectors : MonoBehaviour {
 
         }
 
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.Escape))
         {
             isPaused = !isPaused;
         }
@@ -37,12 +43,12 @@ public class PauseMenuSelectors : MonoBehaviour {
 
     public void LevelSelect()
     {
-        SceneManager.LoadScene("LevelSelect");
+        SceneManager.LoadScene(levelSelect);
     }
 
     public void QuitToMain()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene(mainMenu);
     }
 
 }
