@@ -1,8 +1,9 @@
 ﻿using System.Collections;
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JumpItem : MonoBehaviour, BasicItem  {
+public class JumpItem : BasicItem  {
     public float SpeedModifier
     {
         get
@@ -16,13 +17,6 @@ public class JumpItem : MonoBehaviour, BasicItem  {
         {
             return 1.0f;
         }
-    }
-
-    public void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "Player")
-            //set current Item
-            Destroy(this);
     }
 
     // Use this for initialization
